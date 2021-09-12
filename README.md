@@ -25,34 +25,34 @@ We suggest the following environment:
 ## Behance Dataset
 
   - Download data from [HERE](https://drive.google.com/file/d/1kMmMX7ceYLOZuhdsgi_Qahc269Bpipha/view?usp=sharing) 
-        - Unzip the file and move to `path/to/your/data/folder`           
-        - Each pickle file (`Behance_train.pkl`, `Behance_val.pkl`, `Behance_test.pkl`) contains a list of the following data, which is based on a 5-min. transcript      
-            ```
-            (
-            	List[dict],    # transcript of 5 min. clip
-            	str,           # abstractive summary
-            	List[int],     # extractive summary (indices of each utterance, 0-based)
-            	int,           # unique video ID
-            	int,		   # unique clip ID (e.g. 0 means 0-5 min. clip, 1 means 5-10 min. clip)
-            	str,		   # video title
-            	str,		   # video url
-            	str			   # transcript url
-            )
-            ```
+    - Unzip the file and move to `path/to/your/data/folder`           
+    - Each pickle file (`Behance_train.pkl`, `Behance_val.pkl`, `Behance_test.pkl`) contains a list of the following data, which is based on a 5-min. transcript      
+      ```
+      (
+      	List[dict],    # transcript of 5 min. clip
+      	str,           # abstractive summary
+      	List[int],     # extractive summary (indices of each utterance, 0-based)
+      	int,           # unique video ID
+      	int,		   # unique clip ID (e.g. 0 means 0-5 min. clip, 1 means 5-10 min. clip)
+      	str,		   # video title
+      	str,		   # video url
+      	str			   # transcript url
+      )
+      ```
       
-        - Transcript dictionary above contains the following data
-            ``` 
-            {
-            	'display': str,      # utterance
-            	'offset': float,     # start time of the utterance
-            	'duration': float    # duration of the utterance
-            }
-            ```
+    - Transcript dictionary above contains the following data
+      ``` 
+      {
+      	'display': str,      # utterance
+      	'offset': float,     # start time of the utterance
+      	'duration': float    # duration of the utterance
+      }
+      ```
       
-        - In the paper, we used the following 3,884 clips in train / 728 clips in val / 809 clips in test for experiments. However, due to the privacy issue of two videos in the training set, we remove them and provide the following data.
-            - train: 3,860 clips from 318 videos (24 clips are removed from 2 videos)
-            - val: 728 clips from 25 videos
-            - test: 809 clips from 25 videos
+    - In the paper, we used the following 3,884 clips in train / 728 clips in val / 809 clips in test for experiments. However, due to the privacy issue of two videos in the training set, we remove them and provide the following data.
+      - train: 3,860 clips from 318 videos (24 clips are removed from 2 videos)
+      - val: 728 clips from 25 videos
+      - test: 809 clips from 25 videos
 
 ## Train / Test Models
 
