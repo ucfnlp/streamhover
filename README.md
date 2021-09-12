@@ -24,9 +24,9 @@ We suggest the following environment:
 
 ## Behance Dataset
 
-  - Download data from [HERE](https://drive.google.com/file/d/1kMmMX7ceYLOZuhdsgi_Qahc269Bpipha/view?usp=sharing)
-        - Unzip the file and move to `path/to/your/data/folder`
-        - Each pickle file (`Behance_train.pkl`, `Behance_val.pkl`, `Behance_test.pkl`) contains a list of the following data, which is based on a 5-min. transcript
+  - Download data from [HERE](https://drive.google.com/file/d/1kMmMX7ceYLOZuhdsgi_Qahc269Bpipha/view?usp=sharing) 
+        - Unzip the file and move to `path/to/your/data/folder`           
+        - Each pickle file (`Behance_train.pkl`, `Behance_val.pkl`, `Behance_test.pkl`) contains a list of the following data, which is based on a 5-min. transcript      
             ```
             (
             	List[dict],    # transcript of 5 min. clip
@@ -39,7 +39,7 @@ We suggest the following environment:
             	str			   # transcript url
             )
             ```
-
+      
         - Transcript dictionary above contains the following data
             ``` 
             {
@@ -48,7 +48,7 @@ We suggest the following environment:
             	'duration': float    # duration of the utterance
             }
             ```
-
+      
         - In the paper, we used the following 3,884 clips in train / 728 clips in val / 809 clips in test for experiments. However, due to the privacy issue of two videos in the training set, we remove them and provide the following data.
             - train: 3,860 clips from 318 videos (24 clips are removed from 2 videos)
             - val: 728 clips from 25 videos
