@@ -33,10 +33,10 @@ We suggest the following environment:
       	str,           # abstractive summary
       	List[int],     # extractive summary (indices of each utterance, 0-based)
       	int,           # unique video ID
-      	int,		   # unique clip ID (e.g. 0 means 0-5 min. clip, 1 means 5-10 min. clip)
-      	str,		   # video title
-      	str,		   # video url
-      	str			   # transcript url
+      	int,           # unique clip ID (e.g. 0 means 0-5 min. clip, 1 means 5-10 min. clip)
+      	str,           # video title
+      	str,           # video url
+      	str            # transcript url
       )
       ```
       
