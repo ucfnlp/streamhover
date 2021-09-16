@@ -1,6 +1,6 @@
 # StreamHover: Livestream Transcript Summarization and Annotation
 
-We provide the source code for the paper **"[StreamHover: Livestream Transcript Summarization and Annotation]()"**, accepted at EMNLP 2021. If you find the code useful, please cite the following paper.
+We provide the source code for the paper **"[StreamHover: Livestream Transcript Summarization and Annotation](https://arxiv.org/pdf/2109.05160.pdf)"**, accepted at EMNLP 2021. If you find the code useful, please cite the following paper.
 
 ```
 @inproceedings{cho-et-al:2021,
@@ -49,7 +49,7 @@ We suggest the following environment:
       }
       ```
       
-    - In the paper, we used the following 3,884 clips in train / 728 clips in val / 809 clips in test for experiments. However, due to the privacy issue of two videos in the training set, we remove them and provide the following data.
+    - In the paper, we used 3,884 clips for training, 728 clips for validation, and 809 clips for test. However, due to the privacy issue of two videos in the training set, we remove them and provide the following data.
       - train: 3,860 clips from 318 videos (24 clips are removed from 2 videos)
       - val: 728 clips from 25 videos
       - test: 809 clips from 25 videos
