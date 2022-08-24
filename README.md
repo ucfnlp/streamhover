@@ -24,7 +24,7 @@ We suggest the following environment:
 
 ## Behance Dataset
 
-  - Download data from [HERE](https://drive.google.com/file/d/1kMmMX7ceYLOZuhdsgi_Qahc269Bpipha/view?usp=sharing) 
+  - Download data from [HERE](https://drive.google.com/file/d/1kMmMX7ceYLOZuhdsgi_Qahc269Bpipha/view?usp=sharing) (licensed under CC BY-NC-SA 4.0)
     - Unzip the file and move to `path/to/your/data/folder`           
     - Each pickle file (`Behance_train.pkl`, `Behance_val.pkl`, `Behance_test.pkl`) contains a list of the following data, which is based on a 5-min. transcript      
       ```
